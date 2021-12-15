@@ -4,6 +4,7 @@ import {CommonModule} from "@angular/common";
 import {FormsModule} from "@angular/forms";
 
 import {AppComponent} from "./app.component";
+import {PassengerDashboardModule} from "./passenger-dashboard/passenger-dashboard.module";
 
 // Module contains all of our components
 @NgModule({
@@ -13,9 +14,12 @@ import {AppComponent} from "./app.component";
   ],
   // registers other modules
   imports: [
+    // angular modules
     BrowserModule,
     CommonModule,
-    FormsModule
+    FormsModule,
+    // custom modules
+    PassengerDashboardModule
   ],
   // only root has bootstrap property
   bootstrap: [AppComponent]
